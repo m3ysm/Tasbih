@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3C6A79"
+    android:orientation="vertical">
+
+    <TextView
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:id="@+id/txt_titlevirayesh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="ویرایش دعا" />
+
+
+    <EditText
+        android:textColor="#000"
+        android:id="@+id/edt_NameDoa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:background="@drawable/edit_text_sefareshi"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:textColor="#000"
+        android:id="@+id/edt_MatnDoa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:background="@drawable/edit_text_sefareshi"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_Berozresani"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="7dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/button_sabz"
+            android:text="ویرایش" />
+
+        <Button
+            android:id="@+id/btn_Enseraf"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="7dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/button_germez"
+            android:text="انصراف" />
+    </LinearLayout>
+</LinearLayout>

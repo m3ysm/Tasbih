@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#3C6A79"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:id="@+id/txt_titlesoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="حذف دعا" />
+
+    <TextView
+        android:id="@+id/txt_soal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="right"
+        android:text="TextView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_bale"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="7dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/button_sabz"
+            android:text="بله" />
+
+        <Button
+            android:id="@+id/btn_enseraf"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="7dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/button_germez"
+            android:text="انصراف" />
+    </LinearLayout>
+</LinearLayout>

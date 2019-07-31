@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#001D2E7A"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="#1D2E7A"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardElevation="5dp"
+        android:translationZ="3dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/img_person_row"
+                app:layout_constraintLeft_toRightOf="@id/img_person_row1"
+                android:id="@+id/txt_person_row"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+
+            <ImageView
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/txt_person_row"
+                android:id="@+id/img_person_row"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right|center"
+                android:tint="#1A9900"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:rotation="180"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/txt_person_row"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:id="@+id/img_person_row1"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:tint="#1A9900"
+                app:srcCompat="@drawable/p1" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
