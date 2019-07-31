@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     List<Doaha> list_Doaha;
     private DataBase db;
     TextView txt_DoaRoz, txt_roz, txt_tarikh , txt_personname , txt_onvan;
-    ImageButton  img_chart, img_setting , img_home;
+    ImageButton  img_chart, img_setting;
     Integer PersonID;
     Boolean doubleTab = false;
     Toast backToast;
@@ -55,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
         txt_tarikh = findViewById(R.id.txt_tarikh);
         img_chart = findViewById(R.id.img_chart);
         img_setting = findViewById(R.id.img_setting);
-//        img_home = findViewById(R.id.img_home);
         fb = findViewById(R.id.main_fab);
 
         bindDoa1();
@@ -147,14 +146,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this , SettingActivity.class));
             }
         });
-
-//        img_home.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(MainActivity.this,CounterActivity.class));
-//            }
-//        });
-
 
         listViewDoaha.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -268,16 +259,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void bindDoa1(){
 
-//        Intent intent = getIntent();
-//        Integer df = null;
-//        Integer rid = intent.getIntExtra("rid",df);
-//        Integer lid = intent.getIntExtra("lid",df);
-
-//        if (rid == null){
-//            list_Doaha = db.getPersonDoa(lid);
-//        }else if (lid == null){
-//            list_Doaha = db.getPersonDoa(rid);
-//        }
         getPersonID();
         getName();
         getList_Doaha();

@@ -34,8 +34,9 @@ public class CounterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_counter);
-        db = new DataBase(CounterActivity.this);
 
+
+        db = new DataBase(CounterActivity.this);
 
         Intent intent = getIntent();
         String namedoa = intent.getStringExtra("namedoa");
