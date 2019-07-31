@@ -30,7 +30,6 @@ public class UserActivity extends AppCompatActivity {
     ListPersonAdapter adapter;
     DataBase db;
     FloatingActionButton fb;
-    MainActivity ma;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
